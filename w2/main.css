@@ -20,16 +20,16 @@ html {
 
 body {
     margin-inline: auto;
-    padding: 5rem 6rem;
+    padding: 2rem 6rem;
     background-color: #fff;
     color: #191919;
-    height: 100vh;
+    min-height: 100vh;
     width: 32rem;
 }
 h1 {
     margin-bottom: 2rem;
 }
-h2 {
+h2, h3 {
     color: #00a5e0;
     margin: 1.5rem 0 .25rem 0;
 }
@@ -68,7 +68,8 @@ nav li:first-child > a {
 nav li > a:hover {
     text-decoration: underline;
 }
-section > ul {
+section > ul,
+section > ol {
     margin-left: 2.5rem;
 }
 section > ul > li {
@@ -82,4 +83,15 @@ a:visited {
 }
 a:hover {
     color: #fc8f71;
+}
+figure {
+    margin-left: 2rem;
+    margin-bottom: .94rem;
+}
+p > small {
+    font-size: .66rem;
+}
+dl + p {
+    margin-top: .38rem;
+    margin-left: .6rem;
 }
