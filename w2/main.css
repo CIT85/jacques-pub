@@ -91,7 +91,7 @@ figure {
 p > small {
     font-size: .66rem;
 }
-dl + p {
+dd > p + p {
     margin-top: .38rem;
     margin-left: .6rem;
 }
