@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacque S.">
+    <meta name="description" content="Learning about why I'm taking this course and how to learn more HTML.">
+    <title>Learn More HTML | Why am I taking this Course?</title>
+    <link rel="icon" href="lil-cloud.png" type="image/x-icon">
+    <link rel="stylesheet" href="extra.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="lil-cloud-logo.png" width="40" height="40" title="Back to the home page" alt="Logo for my page; a blue little cloud smiling">
+                </a>
+            </li>
+            <li>
+                <a  href="index.html">Back to home</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Sneak Peak CSS</h1>
+    <section>
+        <h2>CSS Code</h2>
+        <p>
+            I'm adding CSS styling we have not discussed in class yet. While I believe in going at a pace to learn things... I thought this can be an exception so long as I'm not going too far. Below the CSS code, there will be a <a href="#css-learn-more">section listing the documentation</a> so you can check these CSS properties out!
+        </p>
+        <code>
+            &nbsp;<p>Key:</p>
+            &nbsp;<em>selector&nbsp;&lcub;<br>&nbsp;&nbsp;&nbsp;property: value;<br>&nbsp;&rcub;</em>
+            <br>
+            <br>
+            <p>Comment:</p>
+            &nbsp;/* */
+            <br>
+            <br>
+            <hr>
+            <br>
+            *&nbsp;&lcub;<br>
+                <span>
+                    &nbsp;&nbsp;/* Resetting ALL default spacing created by HTML elements to<br>&nbsp;&nbsp;&nbsp; zero(none)*/
+                </span><br>
+                &nbsp;&nbsp;padding: 0;<br>
+                &nbsp;&nbsp;margin: 0;<br>
+            &rcub;<br><br>
+            html&nbsp;&lcub;<br>
+                &nbsp;&nbsp;background-color: #f15025;<br>
+            &rcub;<br><br>
+            body&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-inline: auto;<br>
+                &nbsp;&nbsp;padding: 2rem 6rem;<br>
+                &nbsp;&nbsp;background-color: #fff;<br>
+                &nbsp;&nbsp;background-color: #e5e5e5;<br>
+                &nbsp;&nbsp;color: #191919;<br>
+                &nbsp;&nbsp;min-height: 100vh;<br>
+                &nbsp;&nbsp;width: 32rem;<br>
+            &rcub;<br><br>
+            h1&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-bottom: 2rem;<br>
+            &rcub;<br><br>
+            h2, h3&nbsp;&lcub;<br>
+                &nbsp;&nbsp;color: #00a5e0;<br>
+                &nbsp;&nbsp;margin: 1.5rem 0 .25rem 0;<br>
+            &rcub;<br><br>
+            section > p&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-left: 1.2rem;<br>
+                &nbsp;&nbsp;padding-block: .18rem;<br>
+            &rcub;<br><br>
+            nav&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-bottom: 1rem;<br>
+            &rcub;<br><br>
+            nav li&nbsp;&lcub;<br>
+                &nbsp;&nbsp;display: inline-block;<br>
+                <span>
+                    &nbsp;&nbsp;/* Sometimes inline-block will create phantom space, in order to <br>&nbsp;&nbsp;&nbsp;combat that, we need to add negative margin */
+                </span><br>
+                &nbsp;&nbsp;margin: -0rem;<br>
+                &nbsp;&nbsp;margin-right: 0.86rem;<br>
+            &rcub;<br><br>
+            nav li > a&nbsp;&lcub;<br>
+                &nbsp;&nbsp;text-decoration: none;<br>
+                &nbsp;&nbsp;background-color: #f15025;<br>
+                &nbsp;&nbsp;padding-inline: .5rem;<br>
+                &nbsp;&nbsp;padding-block: .2rem;<br>
+                &nbsp;&nbsp;border-radius: .5rem;<br>
+            &rcub;<br><br>
+            nav li > a:hover&nbsp;&lcub;<br>
+                &nbsp;&nbsp;background-color: #fc8f71;<br>
+                &nbsp;&nbsp;color: #000;<br>
+            &rcub;<br><br>
+            nav li > a,
+            nav li > a:visited&nbsp;&lcub;<br>
+                &nbsp;&nbsp;color: #fff;
+            &rcub;<br><br>
+            nav li:first-child > a&nbsp;&lcub;<br>
+                &nbsp;&nbsp;background-color: initial;<br>
+            &rcub;<br><br>
+            nav li > a:hover&nbsp;&lcub;<br>
+                &nbsp;&nbsp;text-decoration: underline;<br>
+            &rcub;<br><br>
+            section > ul,
+            section > ol&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-left: 2.5rem;<br>
+            &rcub;<br><br>
+            section > ul > li&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-block: .36rem;<br>
+            &rcub;<br><br>
+            a&nbsp;&lcub;<br>
+                &nbsp;&nbsp;color: #35a7ff;<br>
+            &rcub;<br><br>
+            a:visited&nbsp;&lcub;<br>
+                &nbsp;&nbsp;color: #f15025;<br>
+            &rcub;<br><br>
+            a:hover&nbsp;&lcub;<br>
+                &nbsp;&nbsp;color: #fc8f71;<br>
+            &rcub;<br><br>
+            figure&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-left: 2rem;<br>
+                &nbsp;&nbsp;margin-bottom: .94rem;<br>
+            &rcub;<br><br>
+            p > small&nbsp;&lcub;<br>
+                &nbsp;&nbsp;font-size: .66rem;<br>
+            &rcub;<br><br>
+            dd > p + p&nbsp;&lcub;<br>
+                &nbsp;&nbsp;margin-top: .38rem;<br>
+                &nbsp;&nbsp;margin-left: .6rem;<br>
+            &rcub;<br><br>
+            section > ul&nbsp;&lcub;<br>
+            &nbsp;&nbsp;list-style-type: "\01F49A";<br>
+            &rcub;<br><br>
+        </code>
+    </section>
+    <section id="css-learn-more">
+        <h2>Documentation</h2>
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators" target="_blank">Selector Combinators</a>
+            </li>
+            <li>
+                CSS Selector: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors" target="_blank">asterisk(*) aka Universal Selector</a>
+            </li>
+            <li>
+                CSS Property: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">padding</a>
+            </li>
+            <li>
+                CSS Property: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin</a>
+            </li>
+            <li>
+                CSS Property Value: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">Units</a>
+                <ul>
+                    <li>
+                        I'm using REM over PX for unit length, if you'd like to know what REM to PX is, check this tool from <a href="https://nekocalc.com/rem-to-px-converter" target="_blank">Nekocalc</a>.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                CSS Property Value: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color" target="_blank">HEX Color</a>
+            </li>
+            <li>
+                CSS Property: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">border-radius</a>
+            </li>
+            <li>
+                CSS Property: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">text-decoration</a>
+            </li>
+            <li>
+                CSS Property: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type" target="_blank">list-style-type</a>
+            </li>
+        </ul>
+    </section>
+    <br>
+    <hr>
+    <address>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="index.html">Back to home</a>
+        &nbsp; | 
+        <a href="https://github.com/CIT85" target="_blank">Github Organization CIT 85</a>
+        &nbsp; |
+        &copy; copyright @ Jacque S.
+    </address>
+</body>
+</html>

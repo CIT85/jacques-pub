@@ -90,6 +90,37 @@
         <a href="https://github.com/CIT85" target="_blank">Github Organization CIT 85</a>
         &nbsp; |
         &copy; copyright @ Jacque S.
+        <button id="activateCSS">Turn on Sneak Peek of CSS</button>
+        <section id="extraPageSection"></section>
     </address>
+    <script>
+        const activateCSSBtn = document.getElementById('activateCSS')
+        const cssLink = document.querySelector("link[href='main.css']")
+        const extraPageSection = document.getElementById('extraPageSection')
+        activateCSSBtn.addEventListener('click', addCSS)
+        sessionStorage.setItem('isCSSOn', false)
+        function addCSS() {
+            let isCSSOn = JSON.parse(sessionStorage.getItem('isCSSOn'))
+            if(isCSSOn) {
+                sessionStorage.setItem('isCSSOn', false)
+                cssLink.setAttribute('href', 'main.css')
+                activateCSSBtn.innerHTML = 'Turn on Sneak Peek of CSS'
+                extraPageSection.innerHTML = ''
+            } else {
+                sessionStorage.setItem('isCSSOn', true)
+                cssLink.setAttribute('href', 'extra.css')
+                activateCSSBtn.innerHTML = 'Turn off Sneak Peek of CSS'
+                addCSSExtraPage()
+            }
+        }
+        function addCSSExtraPage() {
+            const text = document.createTextNode('Learn what CSS I used')
+            const anchor = document.createElement('a')
+            anchor.href = 'extra.html'
+            anchor.appendChild(text)
+            extraPageSection.appendChild(anchor)
+        }
+
+    </script>
 </body>
 </html>
