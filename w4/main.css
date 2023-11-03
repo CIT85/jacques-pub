@@ -12,3 +12,46 @@ a:visited {
 a:hover {
     color: #fc8f71;
 }
+
+
+table, caption {
+    border: 1px solid;
+}
+table, caption {
+    background-color: #a7e6fff3;
+}
+caption {
+    border-bottom: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: .5rem 0;
+}
+table {
+    margin: 1.2rem;
+    width: 36%;
+    border-collapse: seperate;
+    border-radius: 12px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top: 0;
+    padding: 1em .5em;
+}
+
+th, td {
+    background-color: #fff;
+}
+
+td {
+    background-color: rgb(255, 229, 214)
+}
+
+
+form {
+    width: 35%;
+    padding: 1.2em 1.5em;
+    background-color: #cff1fff3;
+}
+
+nav > h2 {
+    font-size: .76rem;
+}
