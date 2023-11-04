@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@0,800;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #171f0a;
+}
+
+header, main {
+    margin: 0 auto;
+}
+
+header h1 {
+    padding-block: 1.25em;
+}
+
+header h1 > span {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 800;
+}
+
+a {
+    color: #cad593;
+}
+
+a:focus,
+a:visited {
+    color: #a1c349;
+}
+
+.b-inline {
+    display: inline-block;
+    margin: -1px;
+}
+
+main {
+   width: 60vw;
+   padding: 5em 4.5em;
+}
+
+.column {
+    margin: -2px;
+    width: 20%;
+    height: 100.5vh;
+}
+
+.color-block-one {
+    background-color: #243010;
+}
+
+.color-block-two {
+    background-color: #87a330;
+}
+
+.color-block-three {
+    background-color: #a1c349;
+}
+
+.color-block-four {
+    background-color: #cad593;
+}
+
+.color-block-five {
+    background-color: #2a3c24;
+}
+
+header > h1,
+header nav,
+a:hover,
+main,
+footer,
+.color-block-one,
+.color-block-five {
+    color: #f1f4e2;
+}
+
+header > h1, header > nav, .column p, footer {
+    text-align: center;
+}
+header h1 > span, .column p {
+    font-family: 'Playfair Display', serif;
+}
+.column > p {
+    margin: 28.5rem 0;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.3em;
+    letter-spacing: 1.8px;
+}
+
+.box {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: .4em 0;
+    border: 1px solid #000;
+    border-top-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    box-shadow: -2px 3px 1px 1px #000;
+}
+.float-left {
+    float: left;
+}
+article > h2 {
+    font-size: 3rem;
+    padding: 4.5% .7em;
+}
+.float-clear {
+    clear: both;
+}
+
+section {
+    margin-block: 1.35em;
+    border-style: solid;
+    border-bottom-width:.6em;
+    border-left-width: .4em;
+    border-right-width: 37em;
+    border-bottom-left-radius: 12px;
+    padding-block: .90em;
+    padding-inline: 1.32em;
+}
+
+section#colorBlockOne {
+    border-color: #243010;
+}
+
+section#colorBlockTwo {
+    border-color: #87a330;
+}
+
+section#colorBlockThree {
+    border-color: #a1c349;
+}
+
+section#colorBlockFour {
+    border-color: #cad593;
+}
+
+section#colorBlockFive {
+    border-color: #2a3c24;
+}
+
+footer {
+    margin-block: 3.2rem;
+}
+
+@media only screen and (max-width: 1568px) {
+    section {
+        border-right-width: 20rem;
+    }
+
+    article > h2 {
+        padding-block: 7.6%;
+    }
+}
+
+@media only screen and (max-width: 1208px) {
+    section {
+        border-right-width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    section {
+        border-right-width: 4rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .column {
+        width: 100%;
+        height: 8rem;
+        
+    }
+
+    .column > p {
+        padding-top: 3.5rem;
+    }
+
+    .column > .b-inline {
+        display: block;
+    }
+
+    .column > p, .b-inline {
+        margin: 0;
+    }
+
+    main {
+        padding-inline: 2.5em;
+        width: 100%;
+    }
+
+    section {
+        border-right-width: 12rem;
+    }
+}
