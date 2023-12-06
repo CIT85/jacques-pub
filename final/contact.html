@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacque Solano">
+    <meta name="description" content="Reach out to us for inquiries, collaborations, or just to say hello! Connect easily through our Contact Me page - your questions and feedback are always welcome.">
+    <meta name="keywords" content="community garden, gardening tips, sustainable gardening, volunteer gardening, organic gardening, herb gardening, vegetable gardening, flower gardening, planting schedule, garden design, urban gardening, green thumb, gardening community, local gardening, gardening workshops">
+    <title>Green Thumb Community Garden | Contact Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <header>
+        <h1 class="heading text-center">Green Thumb: <span class="nowrap">Our Community Garden</span></h1>
+        <nav class="contact-nav">
+            <h2><small><small>Navigate</small></small></h2>
+            <ul class="flex flex-center-center">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="garden-layout.html"><span class="nowrap">Garden Layout</span></a></li>
+                <li><a href="volunteer.html"><span class="nowrap">Volunteer Information</span></a></li>
+                <li><a href="planting-schedule.html">Planting Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex flex-column">
+        <section>
+            <h2 class="bg-heading">Who Am I?</h2>
+            <p>My name is Jacque, and I got the idea for my project from <a href="https://chat.openai.com/" target="_blank">ChatGPT</a>. The <abbr title="Application Programming Interface">API</abbr> help build the content as well based on prompts I created. While it gave me a few choices, I chose this project idea because during a dark time in my life, garden videos on Youtube helped me get out of my funk. I did try planting, but I <em>lack consistency</em>. Anyways, I really enjoyed doing this project and building the layout; however, if I had managed my time better, I would have created a cleaner and more ogranized stylesheet. Regardless, I hope you enjoy my site!</p>
+        </section>
+        <form action="" id="contact-form" class="flex flex-xl flex-lg flex-sm flex-center-center">
+            <fieldset class="flex flex-column">
+                <legend>Contact Me</legend>
+                <div class="form-input-wrapper flex flex-column">
+                    <label for="name-input">Name</label>
+                    <input type="text" name="name" id="name-input">
+                </div>
+                <div class="form-input-wrapper flex flex-column">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email" id="email-input">
+                </div>
+                <div class="form-input-wrapper flex flex-column">
+                    <label for="subject-input">Subject</label>
+                    <select name="subject" id="subject-input">
+                        <option value="questions">Question</option>
+                        <option value="quote">Quote</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+                <div class="form-input-wrapper">
+                    <label for="message-input">Message</label>
+                    <textarea name="message" id="message-input" cols="50" rows="6"></textarea>
+                </div>
+                <button type="submit">Contact</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>    
+        <div class="flex flex-lg-center flex-sm">
+            <div class="lg-column-width">
+                <p>
+                    Quick links: <br>
+                    <a href="garden-layout.html">Garden Layout</a>, <a href="planting-schedule.html">Planting Schedule</a>, <a href="volunteer.html">Volunteer</a>
+                </p>
+                
+                <p>
+                    <a href="https://github.com/CIT85" target="_blank">CIT-85 Organization</a> | <a href="site.html">Site Map</a>
+                </p>
+            </div>
+            <address class="lg-column-width text-center">
+                <p>
+                    Contact us: <a href="mailto:info@greenthumb.com">info@greenthumb.com</a>
+                </p>
+                <p>
+                    <small>&copy; Green Thumb Community Garden. All rights reserved.</small>
+                </p>
+            </address>
+        </div>
+        <p class="text-center">
+            <small><em>Disclaimer: The Green Thumb Community Garden, its details, and address are entirely fictional, created for educational purposes. Any resemblance to real locations, living or deceased persons, or actual events is purely coincidental. This project is part of an educational exercise and not intended for commercial use.</em></small>
+        </p>  
+    </footer>
+</body>
+</html>

@@ -46,7 +46,7 @@ ul, table, ol{
 
 .position-absolute, 
 body > header::after,
-header > h1 {
+header.jumbotron > h1 {
     position: absolute;
     top: 0;
 }
@@ -169,8 +169,8 @@ header.jumbotron > h1 {
 }
 
 a,
-header > h1,
-header > nav{
+header.jumbotron > h1,
+header.jumbotron > nav{
     color: #F5F5DC;
 }
 
@@ -180,12 +180,12 @@ header > nav > ul > li {
     margin-inline: .35rem;
 }
 
-header > nav > ul > li::after {
+header.jumbotron > nav > ul > li::after {
     content: "|";
     padding-inline: .55rem;
 }
 
-header > nav > ul > li:last-child::after {
+header.jumbotron > nav > ul > li:last-child::after {
     content: "";
 }
 
@@ -302,6 +302,35 @@ footer > p.text-center {
     margin-top: 2rem;
 }
 
+/* CONTACT */
+.contact-nav a {
+    color: unset;
+}
+
+#contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+#contact-form fieldset {
+    font-size: 1.3rem;
+    padding: 2.5rem;
+}
+
+#contact-form .form-input-wrapper {
+    width: 44%;
+}
+
+.bg-heading {
+    background-image: url('../img/pexels-ricky-esquivel-1701893.jpg');
+    background-size: cover;
+    background-position: left;
+    height: 120px;
+    color: #fff;
+    font-size: 3em;
+    padding: 2.28rem 4rem;
+    border-radius: 15px;
+}
+
 /* I tried to change a lot of the widths and heights to px for scaling the images and percentages when sizing up and down; i also reset some of the flex layout  */
 @media screen and (min-width: 1200px) {
     main > article {
@@ -335,6 +364,10 @@ footer > p.text-center {
     .flex-lg-center {
         align-items: center;
         justify-content: center;
+    }
+
+    #contact-form button {
+        width: 30%;
     }
 }
 
@@ -422,7 +455,7 @@ footer > p.text-center {
         align-items: center;
     }
 
-    .lg-column-width {
+    .lg-column-width, #contact-form {
         width: 100%;
     }
 
@@ -433,5 +466,9 @@ footer > p.text-center {
     footer p {
         text-align: center;
     }
-    
+   
+    #contact-form button {
+        padding: .15rem;
+        padding: .25rem;
+    }
 }
