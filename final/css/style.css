@@ -289,6 +289,10 @@ h1.form-heading {
 }
 
 /* FOOTER */
+footer {
+    padding: .80rem 1.08rem;
+}
+
 footer a:hover {
     color: #fff;
 }
@@ -412,6 +416,9 @@ footer > p.text-center {
     .xl-column-width.lg-column-width {
         width: 100%;
     }
+    .color-palette-box  div {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -440,6 +447,9 @@ footer > p.text-center {
 
     section > h3 {
         text-align: center;
+    }
+    .color-palette-box  div {
+        width: 75%;
     }
 }
 
@@ -470,5 +480,14 @@ footer > p.text-center {
     #contact-form button {
         padding: .15rem;
         padding: .25rem;
+    }
+
+    .color-palette-box  div {
+        width: 70%;
+        /* height: 2.6rem;
+        margin-bottom: .32rem;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: .6rem; */
     }
 }
