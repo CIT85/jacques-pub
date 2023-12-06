@@ -472,6 +472,9 @@ footer > p.text-center {
     iframe {
         width: 80%;
     }
+    .nowrap {
+        white-space: unset;
+    }
 }
 
 @media screen and (max-width: 576px) {
