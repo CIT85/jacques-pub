@@ -286,6 +286,18 @@ h1.form-heading {
     color: unset;
     padding-left: 1.32rem;
 }
+table th,
+table td {
+    border: .8px solid #228B22;
+}
+table th {
+    border-radius: 4px;
+    padding: .5rem .8rem;
+}
+
+table td {
+    padding: .2rem 1rem; 
+}
 
 /* FOOTER */
 footer {
