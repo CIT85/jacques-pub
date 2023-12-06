@@ -1,0 +1,437 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@600&family=Roboto&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENERAL STYLES */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:visited {
+    color: #f5f5d4;
+}
+
+a:hover {
+    color: #228B22;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+ul, table, ol{
+    padding-inline: 2.35em;
+}
+
+.heading {
+    font-family: 'Lato', sans-serif;
+    padding-block: .5rem;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.position-absolute, 
+body > header::after,
+header > h1 {
+    position: absolute;
+    top: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+/* JUMBOTRON IMAGES */
+.bg-one {
+    background-image: url('../img/pexels-cottonbro-studio-9725292.jpg');
+    background-position: center 8%;
+}
+.bg-two {
+    background-image: url('../img/pexels-lisa-fotios-1301856.jpg');
+}
+.bg-three {
+    background-image: url('../img/pexels-ricky-esquivel-1701893.jpg');
+}
+.bg-four {
+    background-image: url('../img/pexels-zen-chung-5537520.jpg');
+    background-position: center 22%;
+}
+
+.color-palette-box  div {
+    width: 25%;
+    height: 2.6rem;
+    margin-bottom: .32rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: .6rem;
+}
+body,
+.color-1 {
+    background-color: #F5F5DC;
+}
+
+.color-2 {
+    background-color: #654321;
+}
+
+footer,
+.color-3 {
+    background-color: #228B22;
+}
+
+.color-4 {
+    background-color: #666463;
+}
+
+.color-5 {
+    background-color: #fff;
+}
+
+.color-2,
+.color-3,
+.color-4 {
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-space-bn {
+    justify-content: space-between;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.m-left {
+    margin-left: 12px;
+}
+/* BODY HEADER */
+
+.jumbotron {
+    background-size: cover;
+    height: 36rem;
+    position: relative;
+}
+
+/* Setting the z-index will allow this layer to lay on top of the header with an image to give it a slight darker background; by default, z-index is 0 */
+.jumbotron::after {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Setting z-index to 2 so it lays on top of the header::after above, as  you stack layers, you must add plus one; however, if you want a layer to share with others, you can provide the same level, like I do here */
+header.jumbotron > nav,
+header.jumbotron > h1 {
+    z-index: 2;
+}
+
+header.jumbotron > nav {
+    top: -20px;
+}
+
+header.jumbotron > h1 {
+    width: 400px;
+    top: 8rem;
+    left: 3rem;
+    font-size: 2.86rem;
+}
+
+a,
+header > h1,
+header > nav{
+    color: #F5F5DC;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    margin: -1px;
+    margin-inline: .35rem;
+}
+
+header > nav > ul > li::after {
+    content: "|";
+    padding-inline: .55rem;
+}
+
+header > nav > ul > li:last-child::after {
+    content: "";
+}
+
+/* Choosing to hide my h2 in my nav using visibility as to using display: none, because I don't want the element to be removed from the node list */
+nav > h2 {
+    visibility: hidden;
+}
+
+/* MAIN STYLES */
+
+main { 
+    padding-inline: 1.8rem; 
+    padding-block: 4.6rem; 
+    min-height: 90vh;
+}
+
+main a, h2, h3 {
+    color: #654321;
+}
+
+main a:visited {
+    color: #666463;
+}
+
+main > section {
+    padding-left: 2.65rem;
+}
+article > header > h2.heading {
+    font-size: 2.2rem;
+    color: #228B22;
+}
+
+section {
+    margin-block: 1.88rem;
+}
+
+figure img {
+    display: block;
+    border: 10px double #654321;
+    border-radius: 22px;
+}
+
+figure {
+    padding-right: .8rem;
+}
+
+section.form-wrapper,
+aside.aside-nav,
+form .input-50 {
+    width: 50%;
+    padding-inline: 2.65rem;
+}
+
+aside.aside-nav {
+    border-left: 2px solid #fff;
+}
+
+aside > nav > ul > li {
+    margin-block: 1rem;
+    list-style: none;
+    text-align: center;
+}
+
+aside > nav > ul > li > a {
+    background-color: #fff;
+    padding: .5rem 1.4rem;
+    text-decoration: none;
+}
+
+aside > nav > ul > li > a:hover {
+    background-color: #654321;
+    color: #fff;
+}
+
+details > summary {
+    color:#228B22;
+    font-weight: bold;
+}
+
+details {
+    margin-block: .86rem;
+}
+
+form .input-25 {
+    width: 25%;
+}
+
+form > div {
+    margin-bottom: .90rem;
+}
+
+form button {
+    padding: .45rem 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+h1.form-heading {
+    color: unset;
+    padding-left: 1.32rem;
+}
+
+/* FOOTER */
+footer a:hover {
+    color: #fff;
+}
+
+footer .fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+footer > p.text-center {
+    margin-top: 2rem;
+}
+
+/* I tried to change a lot of the widths and heights to px for scaling the images and percentages when sizing up and down; i also reset some of the flex layout  */
+@media screen and (min-width: 1200px) {
+    main > article {
+        width: 80%;
+        padding-inline: 2rem;
+    }
+
+    .flex-xl {
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* align-items: center; */
+    }
+
+    .xl-column-width {
+        width: 33.3%;
+    }
+
+    .flex-xl + section {
+        width: 68%;
+        margin: 0 auto;
+    }
+
+    .flex-xl .flex.xl-column-width > aside {
+        align-self: center;
+    }
+    
+    p {
+        margin-block: .45rem;
+    }
+
+    .flex-lg-center {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section + aside {
+        margin-left: 1.3rem;
+    }
+    
+    footer {
+        padding-block: 2.5rem;
+        padding-inline: 3.5rem;
+    }
+
+    .flex-lg-center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header.jumbotron > h1 {
+        top: 50%;
+        left: .5rem;
+        font-size: 2.3rem;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .flex-lg {
+        flex-direction: column;
+    }
+
+    header.jumbotron > h1 {
+        top: 60%;
+        left: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .lg-column-width {
+        width: 50%;
+    }
+
+    .xl-column-width.lg-column-width {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header.jumbotron {
+        height: 22rem;
+    }
+    
+    header.jumbotron > h1 {
+        left: .5rem;
+        font-size: 1.75rem;
+        width: 90%;
+    }
+
+    .flex-md {
+        flex-direction: column;
+    }
+
+    .flex img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .flex-md-column.flex-center-center {
+        align-items: flex-start;
+    }
+
+    section > h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header.jumbotron > h1 {
+        width: 60%;
+        font-size: 1.3rem;
+    }
+
+    .flex-sm {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lg-column-width {
+        width: 100%;
+    }
+
+    p {
+        margin-block: .96rem;
+    }
+
+    footer p {
+        text-align: center;
+    }
+    
+}

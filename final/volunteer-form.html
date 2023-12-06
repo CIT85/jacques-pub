@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacque Solano">
+    <meta name="description" content="Sign up to volunteer at our community garden">
+    <meta name="keywords" content="community garden, gardening tips, sustainable gardening, volunteer gardening, organic gardening, herb gardening, vegetable gardening, flower gardening, planting schedule, garden design, urban gardening, green thumb, gardening community, local gardening, gardening workshops">
+    <title>Green Thumb Community Garden | Volunteer Applicaiton Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <header>
+        <h1 class="heading form-heading">Volunteer Application</h1>
+    </header>
+    <main class="flex flex-space-bn main-sm flex-sm">
+        <section class="form-wrapper">
+            <h2>Sign Up Form</h2>
+            <form action="">
+                <div class="flex flex-column">
+                    <label for="name-input">Full Name</label>
+                    <input type="text" name="nameInput" id="name-input" class="input-50">
+                </div>
+                <div class="flex flex-column">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email" id="email-input" class="input-50">
+                </div>
+                <div class="flex flex-column">
+                    <label for="phone-input">Phone Number</label>
+                    <input type="number" name="phone" id="phone-input" class="input-25">
+                </div>
+                <fieldset class="input-50">
+                    <legend>Preffered Method to Contact</legend>
+                    <div>
+                        <input type="radio" id="phone-contact" name="preferred-contact-input" value="phone" >
+                        <label for="phone-contact">Phone</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="email-contact" name="preferred-contact-input" value="email">
+                        <label for="email-contact">Email</label>
+                    </div>
+                </fieldset>
+                <div class="flex flex-column">
+                    <label for="availability-input">Availability</label>
+                    <select name="availability" id="availability-input" class="input-25">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                <div class="flex flex-column">
+                    <label for="message-input">Let Us Know Why You're Interested in Volunteering</label>
+                    <textarea name="message" id="message-input" cols="30" rows="5" class="input-50"></textarea>
+                </div>
+                <div class="flex flex-column">
+                    <label for="question-message-input">Questions?</label>
+                    <textarea name="question-message" id="question-message-input" cols="30" rows="10" class="input-50"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <aside class="flex flex-column flex-center-center aside-nav flex-sm">
+            <nav class="flex flex-column flex-center-center flex-sm">
+                <h2><small><small>Navigate</small></small></h2>
+                <ul class="flex flex-column flex-sm">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="garden-layout.html">Garden Layout</a></li>
+                    <li><a href="volunteer.html">Volunteer Information</a></li>
+                    <li><a href="planting-schedule.html">Planting Schedule</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer class="flex flex-column flex-sm flex-sm-align-center flex-sm">
+        <div class="flex flex-sm">
+            <address>
+                <p>
+                    Contact us: <a href="mailto:info@greenthumb.com">info@greenthumb.com</a>
+                </p>
+                <p>
+                    <small>&copy; Green Thumb Community Garden. All rights reserved.</small>
+                </p>
+            </address>
+        </div>
+        <p class="text-center">
+            <a href="https://github.com/CIT85" target="_blank">CIT-85 Organization</a> | <a href="site.html">Site Map</a>
+        </p>
+        <p class="text-center">
+            <small><em>Disclaimer: The Green Thumb Community Garden, its details, and address are entirely fictional, created for educational purposes. Any resemblance to real locations, living or deceased persons, or actual events is purely coincidental. This project is part of an educational exercise and not intended for commercial use.</em></small>
+        </p>  
+    </footer>
+</body>
+</html>
